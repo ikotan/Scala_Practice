@@ -6,5 +6,5 @@ object Mutable {
     mutable = "Change Mutable"
     printf("%s\n", mutable)
   }
-  // main(Array())
 }
+Mutable.main(Array())

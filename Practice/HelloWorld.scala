@@ -3,3 +3,4 @@ object HelloWorld {
     println("Hello, world!")
   }
 }
+HelloWorld.main(Array())

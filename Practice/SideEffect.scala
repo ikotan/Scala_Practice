@@ -11,5 +11,5 @@ object SideEffect {
     printf("total=%s\n", add(1))
     printf("total=%s\n", add(1))
   }
-  // main(Array())
 }
+SideEffect.main(Array())

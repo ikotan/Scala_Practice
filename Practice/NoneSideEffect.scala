@@ -6,5 +6,5 @@ object NoneSideEffect {
     printf("total=%s\n", add(1))
     printf("total=%s\n", add(1))
   }
-  main(Array())
 }
+NoneSideEffect.main(Array())

@@ -18,5 +18,6 @@ object SlumDunk {
     val user2 = new User(1, "流川", "楓", new FullnameInJapan)
     println(user2.getFullname)
   }
-  // main(Array())
 }
+
+SlumDunk.main(Array())

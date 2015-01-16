@@ -8,5 +8,5 @@ object FirstClassFunction {
     printf("total=%s\n", add(2))
     printf("total=%s\n", add(1))
   }
-  // main(Array())
 }
+FirstClassFunction.main(Array())

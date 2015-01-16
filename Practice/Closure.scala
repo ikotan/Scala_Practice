@@ -13,5 +13,6 @@ object Closure {
     var oddFilter = filter(predicate)
     oddFilter(candidates).foreach(println)
   }
-  // main(Array())
 }
+
+Closure.main(Array())

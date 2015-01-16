@@ -12,5 +12,5 @@ object HelloWorld2 {
   def output(strs: Array[String]): Unit = {
     strs.foreach(printf("%s ", _))
   }
-  main(Array())
 }
+HelloWorld2.main(Array())

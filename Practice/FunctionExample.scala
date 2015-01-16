@@ -5,5 +5,5 @@ object FunctionExample {
     printf("y=%s\n", calculate(1))
     printf("y=%s\n", calculate(2))
   }
-  // main(Array())
 }
+FunctionExample.main(Array())
