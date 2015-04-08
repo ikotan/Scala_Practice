@@ -94,6 +94,10 @@ object List {
 
   def reverse[A](l: List[A]): List[A] = foldLeft(l, List[A]())((acc,h) => Cons(h, acc))
 
+  def add1(l: List[Int]): List[Int] = foldRight(l, Nil:List[Int])((h, t) => Cons(h + 1, t))
+
+  def doubleToString(l: List[Double]): List[String] = foldRight(l, Nil:List[String])((h,t) => Cons(h.toString,t))
+
   // val x = List(1,2,3,4,5) match {
     // case Cons(x, Cons(2, Cons(4, _))) => x
     // case Nil => 42
@@ -122,7 +126,10 @@ val xs: List[Int] = List(1,2,3,4,5,6)
 // println(List.append(List(1,2,3,4,5), List(6,7,8,9)))
 // println(List.append2(List(1,2,3,4,5), List(6,7,8,9)))
 
-println(List.concat(List(List(1,2,3), List(4,5,6), List(7,8))))
+// println(List.concat(List(List(1,2,3), List(4,5,6), List(7,8))))
+
+// println(List.add1(List(1,2,3,4,5)))
+println(List.doubleToString(List(1.1,2.2,3.3,4.4,5.5)))
 
 // println(List.sum3(List(1,2,3,4,5)))
 // println(List.product3(List(1,2,3,4,5)))
