@@ -9,22 +9,22 @@ object P01 {
   }
 
   // while
-  def useWhile(lists: List[Int]): Int = {
+  def useWhile(list: List[Int]): Int = {
     var sum: Int = 0
-    val ls = lists.toIterator
-    while (ls.hasNext) sum = sum + ls.next
+    val lt: Iterator[Int] = list.toIterator
+    while (lt.hasNext) sum = sum + lt.next
     sum
   }
 
   // ループ
-  def useLoop(lists: List[Int]): Int = {
+  def useLoop(list: List[Int]): Int = {
     def loop(ls: List[Int], num: Int): Int = {
       ls match {
         case Nil => num
         case head :: tail => loop(tail, num + head)
       }
     }
-    loop(lists, 0)
+    loop(list, 0)
   }
 
   // メイン
